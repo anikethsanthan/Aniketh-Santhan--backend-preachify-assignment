@@ -1,0 +1,21 @@
+{
+  "name": "reachify-backend",
+  "version": "1.0.0",
+  "description": "backend of the assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "reachify"
+  ],
+  "author": "Aniketh Santhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.8.4"
+  }
+}
