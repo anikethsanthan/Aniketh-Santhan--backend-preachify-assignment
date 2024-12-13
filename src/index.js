@@ -7,9 +7,7 @@ const User =require("./models/user");
 const cookieparser=require("cookie-parser");
 const cors=require("cors");
 
-app.get("/", (req, res) => {
-    res.send("Welcome to the backend API");
-});
+
 
 
 //Server
