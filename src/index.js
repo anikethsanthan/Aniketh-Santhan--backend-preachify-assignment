@@ -9,7 +9,7 @@ const cors=require("cors");
 
 
 
-
+//Server
 const app=express()
 app.use(cors({
     origin:"http://localhost:5173",
