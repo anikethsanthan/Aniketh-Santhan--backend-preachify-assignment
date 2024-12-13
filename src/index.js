@@ -45,3 +45,5 @@ connectDb().then(()=>{
     }
     
 )
+
+module.exports = app; 
