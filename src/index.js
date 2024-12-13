@@ -9,7 +9,6 @@ const cors=require("cors");
 
 
 
-
 //Server
 const app=express()
 app.use(cors({
@@ -19,6 +18,12 @@ app.use(cors({
 }))
 app.use(express.json());
 app.use(cookieparser());
+
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend API");
+});
+
 
 const {authRouter}=require("./routes/auth");
 const { taskRouter } = require("./routes/task");
