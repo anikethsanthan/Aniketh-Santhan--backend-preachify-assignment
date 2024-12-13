@@ -20,6 +20,8 @@ app.use(cookieparser());
 
 const {authRouter}=require("./routes/auth");
 
+app.use("/",authRouter);
+
 
 
 
@@ -28,7 +30,7 @@ const {authRouter}=require("./routes/auth");
 
 connectDb().then(()=>{
     console.log("Connection established to database");
-    app.listen(5678,()=>{
+    app.listen(8888,()=>{
         console.log("Server running successfully");
     })
     
