@@ -73,6 +73,10 @@ const userSchema= new mongoose.Schema({
         default:"./User-photo.jpg",
         trim:true,
         maxlength:250,
+    },
+    task:{
+        type:[String],
+       
     }
 },
 {
