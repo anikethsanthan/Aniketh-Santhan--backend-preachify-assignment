@@ -1,8 +1,29 @@
 const express =require("express");
 const {connectDb}= require("./config/database")
 
-const app= express();
-app.use((req,res)=>{res.send("Hello")})
+const User =require("./models/user");
+
+
+const cookieparser=require("cookie-parser");
+const cors=require("cors");
+
+
+
+
+const app=express()
+app.use(cors({
+    origin:"http://localhost:5173",
+    credentials:true
+}))
+app.use(express.json());
+app.use(cookieparser());
+
+const {authRouter}=require("./routes/auth");
+
+
+
+
+
 
 
 connectDb().then(()=>{
