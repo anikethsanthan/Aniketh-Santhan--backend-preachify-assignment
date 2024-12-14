@@ -20,9 +20,10 @@ app.use(express.json());
 app.use(cookieparser());
 
 
-app.get("/", (req, res) => {
-    res.send("Welcome to the backend API");
-});
+module.exports = (req, res) => {
+    res.status(200).send("Server is running!");
+};
+
 
 
 const {authRouter}=require("./routes/auth");
