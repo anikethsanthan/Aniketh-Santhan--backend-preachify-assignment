@@ -20,9 +20,9 @@ app.use(express.json());
 app.use(cookieparser());
 
 
-// app.get("/", (req, res) => {
-//     res.send("Welcome to the backend API");
-// });
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend API");
+});
 
 
 const {authRouter}=require("./routes/auth");
